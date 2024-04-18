@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестовый Лендинг</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo"></div>
+            <div class="header-description-container">
+                <h1 class="header-title">
+                    Превратите уездный город
+                    <span class="header-title-center">в столицу</span>
+                    <span class="header-title-right">земного шара</span>
+                </h1>
+                <p>
+                    Оплатите взнос на телеграммы для организации Международного васюкинского турнира по шахматам
+                </p>
+                <div class="header-btn-group">
+                    <div class="btn-action btn-black" onclick="scrollToElement('support')">Поддержать шахматную мысль
+                    </div>
+                    <div class="btn-action" onclick="scrollToElement('about')">Подробнее о турнире</div>
+                </div>
+            </div>
+        </div>
+        <div id="animated-bg" class="animated-bg">
+            <div id="sun" class="sun"></div>
+            <div id="queen" class="queen"></div>
+            <div id="king" class="king"></div>
+            <div class="city-bg"></div>
+            <div class="horse"></div>
+            <div class="solider"></div>
+
+        </div>
+    </header>
+    <div class="running-line-container">
+        <div class="running-line">
+            <span>
+                Дело помощи утопающим — дело рук самих утопающих!
+            </span>
+            <span>
+                Шахматы двигают вперёд не только культуру, но и экономику!
+            </span>
+            <span>
+                Лед тронулся, господа присяжные заседатели!
+            </span>
+            <span>
+                Дело помощи утопающим — дело рук самих утопающих!
+            </span>
+            <span>
+                Шахматы двигают вперёд не только культуру, но и экономику!
+            </span>
+            <span>
+                Лед тронулся, господа присяжные заседатели!
+            </span>
+        </div>
+
+
+    </div>
+    <main class="main">
+        <div class="container">
+            <section class="section section-support">
+                <div class="section-item">
+                    <div id="support" class="section-description">
+                        <h2>
+                            Чтобы поддержать Международный васюкинский турнир
+                            <div class="section-image img-chess-masters mobile">
+                            </div>
+                            посетите
+                            лекцию на тему:
+                            <span class="red-text">«Плодотворная дебютная идея»</span>
+                        </h2>
+                    </div>
+                    <div class="section-image img-chess-masters desktop">
+                    </div>
+                </div>
+                <div class="section-item">
+                    <div class="section-image img-chess-master">
+                    </div>
+                    <div id="about" class="section-description">
+                        <h2>
+                            и Сеанс <span class="red-text">одновременной игры в шахматы на 160 досках</span>
+                            гроссмейстера О. Бендера
+                        </h2>
+                        <table>
+                            <tr>
+                                <td>Место проведения:</td>
+                                <td>Клуб «Картонажник»</td>
+                            </tr>
+                            <tr>
+                                <td>Дата и время мероприятия:</td>
+                                <td>22 июня 1927 г. в 18:00</td>
+                            </tr>
+                            <tr>
+                                <td>Стоимость входных билетов:</td>
+                                <td>20 коп.</td>
+                            </tr>
+                            <tr>
+                                <td>Плата за игру:&nbsp;</td>
+                                <td>50 коп.</td>
+                            </tr>
+                            <tr>
+                                <td>Взнос на телеграммы:</td>
+                                <td><span class="old-price">100 руб.</span> 21 руб. 16 коп.</td>
+                            </tr>
+                        </table>
+                        <span class="hint">По всем вопросам обращаться в администрацию к К. Михельсону</span>
+                    </div>
+                </div>
+
+            </section>
+            <section class="section section-stages">
+                <h3 class="with-hint">Этапы преображения Васюков</h3>
+                <div id="stages" class="stages">
+                    <div class="stage stage1">
+                        Строительство железнодорожной магистрали Москва-Васюки
+                    </div>
+                    <div class="stage stage2">
+                        Открытие фешенебельной гостиницы «Проходная пешка» и других небоскрёбов
+                    </div>
+                    <div class="stage stage3">
+                        Поднятие сельского хозяйства в радиусе на тысячу километров: производство овощей, фруктов, икры,
+                        шоколадных конфет
+                    </div>
+                    <div class="stage stage4">
+                        Строительство дворца для турнира
+                    </div>
+                    <div class="stage stage5">
+                        Размещение гаражей для гостевого автотранспорта
+                    </div>
+                    <div class="stage stage6">
+                        Постройка сверхмощной радиостанции для передачи всему миру сенсационных результатов
+                    </div>
+                    <div class="stage stage7">
+                        Создание аэропорта «Большие Васюки» с регулярным отправлением почтовых самолётов и дирижаблей
+                        во все концы света, включая Лос-Анжелос и Мельбурн
+                    </div>
+                </div>
+                <div class="swiper-control mobile">
+                    <div class="left" onclick="prevStage()"></div>
+                    <div id="stages-pages" class="stages-pages">
+                        <div class="stage-page active"></div>
+                        <div class="stage-page"></div>
+                        <div class="stage-page"></div>
+                        <div class="stage-page"></div>
+                        <div class="stage-page"></div>
+                    </div>
+                    <div class="right" onclick="nextStage()"></div>
+                </div>
+            </section>
+            <section class="section section-participants">
+                <h3>Участники турнира</h3>
+                <div id="swiper" class="swiper">
+                    <div class="slide">
+                        <img src="./images/participant.png" alt="Участник">
+                        <div class="name">Хозе-Рауль Капабланка</div>
+                        <div class="title">Чемпион мира по шахматам</div>
+                        <div class="more-btn">Подробнее</div>
+                    </div>
+                    <div class="slide">
+                        <img src="./images/participant.png" alt="Участник">
+                        <div class="name">Эммануил Ласкер</div>
+                        <div class="title">Чемпион мира по шахматам</div>
+                        <div class="more-btn">Подробнее</div>
+                    </div>
+                    <div class="slide">
+                        <img src="./images/participant.png" alt="Участник">
+                        <div class="name">Александр Алехин</div>
+                        <div class="title">Чемпион мира по шахматам</div>
+                        <div class="more-btn">Подробнее</div>
+                    </div>
+                    <div class="slide">
+                        <img src="./images/participant.png" alt="Участник">
+                        <div class="name">Арон Нимцович</div>
+                        <div class="title">Чемпион мира по шахматам</div>
+                        <div class="more-btn">Подробнее</div>
+                    </div>
+                    <div class="slide">
+                        <img src="./images/participant.png" alt="Участник">
+                        <div class="name">Рихард Рети</div>
+                        <div class="title">Чемпион мира по шахматам</div>
+                        <div class="more-btn">Подробнее</div>
+                    </div>
+                    <div class="slide">
+                        <img src="./images/participant.png" alt="Участник">
+                        <div class="name">Остап Бендер</div>
+                        <div class="title">Чемпион мира по шахматам</div>
+                        <div class="more-btn">Подробнее</div>
+                    </div>
+                </div>
+                <div class="swiper-control">
+                    <div class="left" onclick="prevSlide()"></div>
+                    <div class="pages"><span id="active-slide"></span><span id="all-slides"></span></div>
+                    <div class="right" onclick="nextSlide()"></div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <div class="running-line-container">
+        <div class="running-line">
+            <span>
+                Дело помощи утопающим — дело рук самих утопающих!
+            </span>
+            <span>
+                Шахматы двигают вперёд не только культуру, но и экономику!
+            </span>
+            <span>
+                Лед тронулся, господа присяжные заседатели!
+            </span>
+            <span>
+                Дело помощи утопающим — дело рук самих утопающих!
+            </span>
+            <span>
+                Шахматы двигают вперёд не только культуру, но и экономику!
+            </span>
+            <span>
+                Лед тронулся, господа присяжные заседатели!
+            </span>
+        </div>
+
+
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <p>Все персонажи, события и цитаты являются вымышленными и не принадлежат создателям сайта. С подробностями
+                можно познакомиться в главе XXXIV романа Ильи Ильфа и Евгения Петрова «Двенадцать стульев».</p>
+        </div>
+    </footer>
+
+    <script src="./scripts/index.js"></script>
+</body>
+
+</html>
